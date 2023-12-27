@@ -1,0 +1,3 @@
+mixingSolidLiquidPCMFoam.C
+
+EXE = $(FOAM_USER_APPBIN)/mixingSolidLiquidPCMFoam
