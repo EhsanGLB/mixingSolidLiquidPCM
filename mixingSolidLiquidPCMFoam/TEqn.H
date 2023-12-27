@@ -1,5 +1,5 @@
+for (int i=0; i<7; i++ ) // added
 {
-
     volScalarField rhoCp("rhoCp", rhol*Cpl*gamma + rhos*Cps*(1-gamma));
     volScalarField Cp("Cp", rhoCp/rho);
     volScalarField kappa("kappa", kappal*gamma + kappas*(1-gamma));
@@ -24,5 +24,4 @@
 
     //rhok = 1.0 - beta*(T - TRef);
     gamma = 0.5 * erf( 4.0 * ( T - Tm ) / Tmr ) + scalar(0.5);
-
 }
